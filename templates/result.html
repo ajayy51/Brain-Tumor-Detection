@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #a1ddee;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 80vh;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Result</h1><br>
+    <p>{{ result }}</p>
+    <img src="{{ url_for('static', filename='uploads/' + image) }}" alt="Uploaded Image">
+</body>
+</html>
